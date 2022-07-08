@@ -18,7 +18,7 @@ steps:
    inputs:
     artifact: ${{parameters.artifact}}
     path: $(build.artifactstagingdirectory)
--  task: AzureWebApp@1
+ - task: AzureWebApp@1
    displayName: 'Azure Web App Deploy: insight-webapp'
    inputs:
     azureSubscription: ${{parameters.azureSubscription}}
