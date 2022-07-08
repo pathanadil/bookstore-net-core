@@ -2,7 +2,7 @@
 
 trigger: none
 
-  jobs:
+jobs:
   - job: Job_1
     displayName:  Build Agent 
     pool:
@@ -10,9 +10,6 @@ trigger: none
 extends:
      template: .Net-CI.yaml
 
-
-  dependsOn: CI
-  jobs:
   - job: Job_2
     displayName: Deploy Agent 
     pool:
