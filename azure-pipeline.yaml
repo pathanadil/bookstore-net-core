@@ -1,12 +1,26 @@
 
 trigger: none
+stages:
+- stage: CI
+  jobs:
+  - job: Job_1
+    displayName:  Build Agent 
+    pool:
+      vmImage: 'windows-latest'
+    steps:
+     template: .Net.CI.yaml
 
-extends:
-  template:
-  [
-  '.Net-CI.yaml',
-  '.Net-CD.yaml'
-  ]
+- stage: CD
+  dependsOn: CI
+  jobs:
+  - job: Job_2
+    displayName: Deploy Agent 
+    pool:
+       vmImage: 'windows-latest'
+    steps:
+     template: .Net.CD.yaml
+
+
   
   
   
