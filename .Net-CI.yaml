@@ -9,14 +9,8 @@ parameters:
         type: string
         default: 'Release'       
 
-stages:
-- stage: CI
-  jobs:
-  - job: Job_1
-    displayName:  Build Agent 
-    pool:
-      vmImage: 'windows-latest'
-  steps:
+
+steps:
     - checkout: self
       clean: true
     - task: NuGetToolInstaller@1
