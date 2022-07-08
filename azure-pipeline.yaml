@@ -3,5 +3,6 @@ trigger: none
 
 extends:
   template: .Net-CI.yaml
+  template: .Net-CD.yaml
   
 
