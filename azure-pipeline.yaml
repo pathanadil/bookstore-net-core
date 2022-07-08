@@ -2,18 +2,11 @@
 
 trigger: none
 
-jobs:
-  - job: Job_1
-    displayName:  Build Agent 
-    pool:
-      vmImage: 'windows-latest'
+
 extends:
      template: .Net-CI.yaml
 
-  - job: Job_2
-    displayName: Deploy Agent 
-    pool:
-       vmImage: 'windows-latest'
+  
 extends:
      template: .Net-CD.yaml
 
