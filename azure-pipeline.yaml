@@ -3,11 +3,13 @@
 trigger: none
 
 
-extends:
-     template: .Net-CI.yaml
-    -script: echo This step will be stripped out and not run!
-     template: .Net-CD.yaml
-
+jobs:
+- job: Build
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - template: .Net-CI.yaml
+  - template: .Net-CD.Yaml
 
   
   
