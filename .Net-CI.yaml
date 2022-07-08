@@ -8,14 +8,8 @@ parameters:
       - name: buildConfiguration
         type: string
         default: 'Release'       
-stages:
-- stage: CI
-  jobs:
-  - job: Job_1
-    displayName:  Build Agent 
-    pool:
-      vmImage: 'windows-2019'
-    steps:
+
+steps:
     - checkout: self
       clean: true
     - task: NuGetToolInstaller@1
