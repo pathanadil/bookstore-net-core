@@ -1,4 +1,13 @@
-
+parameters:
+      - name: webapp
+        type: string
+        default: 'insight-webapp'
+      - name: apptype
+        type: string
+        default: 'webApp'
+      - name: azureSubscription
+        type: string
+        default: 'Free Trial (180be318-3bda-484b-9b28-27ffcbe8b622)'      
 stages:
 - stage: CI
   jobs:
@@ -11,6 +20,6 @@ stages:
 - task: AzureWebApp@1
   displayName: 'Azure Web App Deploy: insight-webapp'
   inputs:
-    azureSubscription: 'Free Trial (180be318-3bda-484b-9b28-27ffcbe8b622)'
-    appType: webApp
-    appName: 'insight-webapp'
+    azureSubscription: ${{parameters.azureSubscription}}
+    appType: ${{parameters.apptype}}
+    appName: ${{parameters.webapp}}
