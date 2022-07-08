@@ -9,7 +9,7 @@ jobs:
     vmImage: 'windows-latest'
   steps:
   - template: .Net-CI.yaml
-  - template: .Net-CD.Yaml
+  - template: .Net-CD.yaml
 
   
   
