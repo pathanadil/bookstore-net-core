@@ -2,7 +2,14 @@
 trigger: none
 
 extends:
-  template: .Net-CI.yaml
-  template: .Net-CD.yaml
+  template:
+  [
+  '.Net-CI.yaml'
+  '.Net-CD.yaml'
+  ]
+  
+  
+  
+
   
 
