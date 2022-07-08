@@ -8,7 +8,7 @@ stages:
     pool:
       vmImage: 'windows-latest'
     steps:
-     template: .Net.CI.yaml
+     -template: .Net.CI.yaml
 
 - stage: CD
   dependsOn: CI
@@ -18,7 +18,7 @@ stages:
     pool:
        vmImage: 'windows-latest'
     steps:
-     template: .Net.CD.yaml
+     -template: .Net.CD.yaml
 
 
   
