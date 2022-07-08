@@ -8,19 +8,16 @@ parameters:
       - name: azureSubscription
         type: string
         default: 'Free Trial (180be318-3bda-484b-9b28-27ffcbe8b622)'  
-      - name: buildType
+      - name: artifact
         type: string
-        default: 'current' 
-      - name: buildVersionToDownload
-        type: string
-        default: 'latest'
+        default: 'drop' 
+      
 
 steps:
  - task: DownloadPipelineArtifact@2
    inputs:
-   buildType: ${{parameters.buildType}}
-   buildVersionToDownload: ${{parameters.buildVersionToDownload}}
-   targetPath: '$(build.artifactstagingdirectory)'
+    artifact: ${{parameters.artifact}}
+    path: $(build.artifactstagingdirectory)
 -  task: AzureWebApp@1
    displayName: 'Azure Web App Deploy: insight-webapp'
    inputs:
