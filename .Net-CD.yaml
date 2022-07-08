@@ -24,3 +24,4 @@ steps:
     azureSubscription: ${{parameters.azureSubscription}}
     appType: ${{parameters.apptype}}
     appName: ${{parameters.webapp}}
+    package: $(build.artifactstagingdirectory)/**/*.zip
