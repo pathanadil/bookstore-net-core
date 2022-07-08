@@ -8,6 +8,7 @@ stages:
     pool:
       vmImage: 'windows-latest'
     steps:
+    extends:
      -template: .Net-CI.yaml
 
 - stage: CD
@@ -18,6 +19,7 @@ stages:
     pool:
        vmImage: 'windows-latest'
     steps:
+    extends:
      -template: .Net-CD.yaml
 
 
