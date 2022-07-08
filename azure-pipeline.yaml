@@ -1,4 +1,5 @@
 
+
 trigger: none
 stages:
 - stage: CI
@@ -7,8 +8,7 @@ stages:
     displayName:  Build Agent 
     pool:
       vmImage: 'windows-latest'
-   
-    extends:
+extends:
      template: .Net-CI.yaml
 
 - stage: CD
@@ -18,8 +18,7 @@ stages:
     displayName: Deploy Agent 
     pool:
        vmImage: 'windows-latest'
-   
-    extends:
+extends:
      template: .Net-CD.yaml
 
 
