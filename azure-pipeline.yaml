@@ -5,7 +5,7 @@ trigger: none
 
 extends:
      template: .Net-CI.yaml
-     - script: echo This step will be stripped out and not run!
+    -script: echo This step will be stripped out and not run!
      template: .Net-CD.yaml
 
 
