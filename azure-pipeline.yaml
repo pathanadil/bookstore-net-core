@@ -5,11 +5,3 @@ extends:
   template: .Net-CI.yaml
   
 
-- stage: CD
-  jobs:
-  - job: Job_1
-    displayName:  Build Agent 
-    pool:
-      vmImage: 'windows-latest' 
-    steps:
-     template: .Net-CD.yaml
