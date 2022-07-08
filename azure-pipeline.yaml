@@ -9,7 +9,7 @@ stages:
       vmImage: 'windows-latest'
    
     extends:
-     -template: .Net-CI.yaml
+     template: .Net-CI.yaml
 
 - stage: CD
   dependsOn: CI
@@ -20,7 +20,7 @@ stages:
        vmImage: 'windows-latest'
    
     extends:
-     -template: .Net-CD.yaml
+     template: .Net-CD.yaml
 
 
   
