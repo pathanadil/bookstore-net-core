@@ -1,0 +1,42 @@
+parameters:
+      - name: solution
+        type: string
+        default: 'aspnet-get-started/*.csproj'
+      - name: buildPlatform
+        type: string
+        default: 'Any CPU'
+      - name: buildConfiguration
+        type: string
+        default: 'Release'       
+stages:
+- stage: CI
+  jobs:
+  - job: Job_1
+    displayName:  Build Agent 
+    pool:
+      vmImage: 'windows-2019'
+    steps:
+    - checkout: self
+      clean: true
+    - task: NuGetToolInstaller@1
+      displayName: Use NuGet
+      inputs:
+        checkLatest: true
+    - task: DotNetCoreCLI@2
+      displayName: Restore
+      inputs:
+        command: restore
+        projects: ${{parameters.solution}}
+    - task: DotNetCoreCLI@2
+      displayName: Build
+      inputs:
+        arguments: --configuration ${{parameters.buildConfiguration}}
+        projects: ${{parameters.solution}}
+    
+    - task: DotNetCoreCLI@2
+      displayName: Publish
+      inputs:
+       command: publish
+       publishWebProjects: True
+       arguments: --configuration ${{parameters.buildConfiguration}} --output $(build.artifactstagingdirectory)
+       zipAfterPublish: True
