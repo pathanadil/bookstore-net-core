@@ -3,4 +3,13 @@ trigger: none
 
 extends:
   template: .Net-CI.yaml
-  template: .Net-CD.yaml
+  
+ stages:
+- stage: CD
+  jobs:
+  - job: Job_1
+    displayName:  Build Agent 
+    pool:
+      vmImage: 'windows-latest' 
+    steps:
+     template: .Net-CD.yaml
