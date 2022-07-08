@@ -17,6 +17,11 @@ stages:
       vmImage: 'windows-latest'
 
  steps:
+ - task: DownloadPipelineArtifact@2
+   inputs:
+   buildType: 'current'
+   buildVersionToDownload: 'latest'
+   targetPath: '$(build.artifactstagingdirectory)'
 - task: AzureWebApp@1
   displayName: 'Azure Web App Deploy: insight-webapp'
   inputs:
