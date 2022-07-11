@@ -20,7 +20,7 @@ variables:
 jobs:
 - job: Build
   pool:
-    vmImage: ${{ values.vmImage }}
+    vmImage: ${{ Variables.vmImage }}
   steps:
   
   - template: .Net-CI.yaml
