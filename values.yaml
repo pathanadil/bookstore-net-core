@@ -12,10 +12,10 @@ variables:
 - name: vmImage
   value: windows-latest
 - name: webapp
-  value: 'insight-webapp'
+  value: insight-webapp
 - name: apptype
-  value: 'webApp'
+  value: webApp
 - name: azureSubscription
-  value: 'Free Trial (180be318-3bda-484b-9b28-27ffcbe8b622)'  
+  value: Free Trial (180be318-3bda-484b-9b28-27ffcbe8b622)  
 - name: artifact
-  value: 'drop'  
+  value: drop  
