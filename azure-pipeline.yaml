@@ -1,9 +1,9 @@
 resources:
   repositories:
-  - repository: MygitHubRepo
-    type: github
-    endpoint: Mygit
-    name: balaji-9702/Templates
+  - repository: ${{values.repository}}
+    type: ${{values.type}}
+    endpoint: ${{values.endpoint}}
+    name: ${{values.name}}
     
    
 
