@@ -4,7 +4,7 @@ resources:
     type: git
     endpoint: Mygit
     name: Templates
-    ref: main
+    
    
 
 
@@ -17,8 +17,8 @@ jobs:
     vmImage: 'windows-latest'
   steps:
   
-  - template: Templates/.Net-CI.yaml
-  - template: Templates/.Net-CD.yaml
+  - template: .Net-CI.yaml
+  - template: .Net-CD.yaml
   
   
   
