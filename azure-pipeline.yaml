@@ -2,7 +2,6 @@ resources:
   repositories:
   - repository: Templates
     type: git
-    endpoint: Mygit
     name: Templates
     
    
