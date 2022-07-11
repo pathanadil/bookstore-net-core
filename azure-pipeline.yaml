@@ -8,8 +8,8 @@ jobs:
   pool:
     vmImage: 'windows-latest'
   steps:
-  - source: https://github.com/balaji-9702/Templates/blob/main/.Net-CI.yaml
-  - source: https://github.com/balaji-9702/Templates/blob/main/.Net.CD.yaml
+  - template: https://github.com/balaji-9702/Templates/blob/main/.Net-CI.yaml
+  - template: https://github.com/balaji-9702/Templates/blob/main/.Net.CD.yaml
   
   
   
