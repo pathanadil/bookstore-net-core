@@ -1,5 +1,12 @@
 
-repository: "MygitHubRepo"
-type: "github"
-endpoint: "Mygit"
-name: "balaji-9702/Templates"
+
+variables:
+- name: repository
+  value: MygitHubRepo
+- name: type
+  value: github
+- name: endpoint
+  value: Mygit
+- name: name
+  value: balaji-9702/Templates
+  
