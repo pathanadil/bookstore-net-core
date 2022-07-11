@@ -1,3 +1,11 @@
+resources:
+  repositories:
+  - repository: MyGitHubRepo
+    type: github
+    endpoint: https://github.com/balaji-9702/Templates
+    name: Templates
+    ref: main
+   
 
 
 trigger: none
@@ -8,8 +16,8 @@ jobs:
   pool:
     vmImage: 'windows-latest'
   steps:
-  - template: https://github.com/balaji-9702/Templates/blob/main/.Net-CI.yaml
-  - template: https://github.com/balaji-9702/Templates/blob/main/.Net.CD.yaml
+  - template: MyGitHubRepo/.Net-CI.yaml
+  - template: MyGitHubRepo/.Net-CD.yaml
   
   
   
