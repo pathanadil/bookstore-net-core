@@ -1,6 +1,6 @@
 resources:
   repositories:
-  - repository: balaji-9702
+  - repository: Mygit
     type: github
     endpoint: https://github.com/balaji-9702/Templates
     name: Templates
@@ -16,8 +16,8 @@ jobs:
   pool:
     vmImage: 'windows-latest'
   steps:
-  - template: balaji-9702/.Net-CI.yaml
-  - template: balaji-9702/.Net-CD.yaml
+  - template: Mygit/.Net-CI.yaml
+  - template: Mygit/.Net-CD.yaml
   
   
   
