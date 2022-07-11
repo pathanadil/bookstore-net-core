@@ -3,7 +3,7 @@ resources:
   - repository: Templates
     type: git
     endpoint: Mygit
-    name: balaji-9702/Templates
+    name: Templates
     ref: main
    
 
@@ -16,9 +16,9 @@ jobs:
   pool:
     vmImage: 'windows-latest'
   steps:
-  - checkout: Templates
-  - template: .Net-CI.yaml
-  - template: .Net-CD.yaml
+  
+  - template: .Net-CI.yaml@Templates
+  - template: .Net-CD.yaml@Templates
   
   
   
