@@ -1,9 +1,9 @@
 resources:
   repositories:
-  - repository: Mygitrepo
-    type: github
+  - repository: Templates
+    type: git
     endpoint: Mygit
-    name: https://github.com/balaji-9702/Templates
+    name: balaji-9702/Templates
     ref: main
    
 
@@ -16,7 +16,7 @@ jobs:
   pool:
     vmImage: 'windows-latest'
   steps:
-  - checkout: Mygitrepo
+  - checkout: Templates
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
   
