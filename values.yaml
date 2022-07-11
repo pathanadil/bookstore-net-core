@@ -2,18 +2,13 @@
 
 variables:
 - name: repository
-  type: String
-  value: "MygitHubRepo"
+  value: MygitHubRepo
 - name: type
-  type: String
-  value: "github"
+  value: github
 - name: endpoint
-  type: String
-  value: "Mygit"
+  value: Mygit
 - name: name
-  type: String
-  value: "balaji-9702/Templates"
+  value: balaji-9702/Templates
 - name: vmImage
-  type: String
-  value: "windows-latest"
+  value: windows-latest
   
