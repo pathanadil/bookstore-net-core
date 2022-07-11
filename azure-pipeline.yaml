@@ -1,8 +1,9 @@
 resources:
   repositories:
-  - repository: Templates
-    type: git
-    name: Templates
+  - repository: MygitHubRepo
+    type: github
+    endpoint: Mygit
+    name: balaji.9702/Templates
     
    
 
