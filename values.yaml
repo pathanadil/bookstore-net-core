@@ -19,3 +19,9 @@ variables:
   value: Free Trial (180be318-3bda-484b-9b28-27ffcbe8b622)  
 - name: artifact
   value: drop  
+- name: solution
+  value: **/*.sln
+- name: buildConfiguration
+  value: Release
+  
+  
