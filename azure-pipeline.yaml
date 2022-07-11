@@ -1,9 +1,13 @@
+variables:
+- template: values.yaml
+
+
 resources:
   repositories:
-  - repository: ${{values.repository}}
-    type: ${{values.type}}
-    endpoint: ${{values.endpoint}}
-    name: ${{values.name}}
+  - repository: MygitHubRepo
+    type: ${{ values.type }}
+    endpoint: ${{ values.endpoint }}
+    name: ${{ values.name }}
     
    
 
@@ -14,7 +18,7 @@ trigger: none
 jobs:
 - job: Build
   pool:
-    vmImage: 'windows-latest'
+    vmImage: ${{ values.vmImage }}
   steps:
   
   - template: .Net-CI.yaml
