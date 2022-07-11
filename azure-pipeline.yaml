@@ -16,6 +16,7 @@ jobs:
   pool:
     vmImage: 'windows-latest'
   steps:
+  - checkout: Mygitrepo
   - template: Mygitrepo/.Net-CI.yaml
   - template: Mygitrepo/.Net-CD.yaml
   
