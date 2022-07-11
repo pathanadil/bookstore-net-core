@@ -13,4 +13,7 @@ variables:
 - name: name
   type: String
   value: "balaji-9702/Templates"
+- name: vmImage
+  type: String
+  value: "windows-latest"
   
