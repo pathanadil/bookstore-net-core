@@ -1,5 +1,4 @@
-variables:
-- template: values.yaml
+
 
 
 resources:
@@ -13,6 +12,9 @@ resources:
 
 
 trigger: none
+
+variables:
+- template: values.yaml
 
 
 jobs:
