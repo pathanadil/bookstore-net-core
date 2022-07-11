@@ -2,11 +2,15 @@
 
 variables:
 - name: repository
-  value: MygitHubRepo
+  type: String
+  value: "MygitHubRepo"
 - name: type
-  value: github
+  type: String
+  value: "github"
 - name: endpoint
-  value: Mygit
+  type: String
+  value: "Mygit"
 - name: name
-  value: balaji-9702/Templates
+  type: String
+  value: "balaji-9702/Templates"
   
