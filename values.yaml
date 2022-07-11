@@ -20,7 +20,7 @@ variables:
 - name: artifact
   value: drop  
 - name: solution
-  value: **/*.sln
+  value: "**/*.sln"
 - name: buildConfiguration
   value: Release
   
