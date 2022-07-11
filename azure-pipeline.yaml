@@ -3,7 +3,7 @@ resources:
   - repository: MygitHubRepo
     type: github
     endpoint: Mygit
-    name: balaji.9702/Templates
+    name: balaji-9702/Templates
     
    
 
