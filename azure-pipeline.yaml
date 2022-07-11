@@ -5,9 +5,9 @@ variables:
 resources:
   repositories:
   - repository: MygitHubRepo
-    type: ${{ values.type }}
-    endpoint: ${{ values.endpoint }}
-    name: ${{ values.name }}
+    type: github
+    endpoint: Mygit
+    name: balaji-9702/Templates
     
    
 
