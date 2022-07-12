@@ -31,7 +31,7 @@ jobs:
   steps:
   - checkout: MygithubRep
     path: s
-  - template: balaji-9702/Templates/python-CI.yaml
+  - template: s/python-CI.yaml
   - script: echo "hi"
   
   
