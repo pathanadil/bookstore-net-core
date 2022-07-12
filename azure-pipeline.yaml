@@ -19,7 +19,7 @@ variables:
 
 jobs:
 - job: Build
-  condition: ${{ variables.Buildtech }} == Net
+  condition: ${{ if eq(${{ variables.Buildtech }}, 'Net')
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
