@@ -33,6 +33,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
+  
   - script: mkdir projects
   - script: cd projects
   - script: git clone https://github.com/balaji-9702/Templates.git --branch test
