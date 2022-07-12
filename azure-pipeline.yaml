@@ -20,6 +20,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
+  - checkout: self
   - template: Angular-CI.yaml
   
 
@@ -28,6 +29,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
+  
   - script: echo "This is React project"
   
 
