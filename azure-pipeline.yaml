@@ -37,7 +37,7 @@ jobs:
   - checkout: MyGitHubRepo
   - script: cd D:\a\1\s
   - script: ls
-  - template: python-CI.yaml
+  - template: python-CI.yaml@ymltemplates
   - script: echo "hi"
   
   
