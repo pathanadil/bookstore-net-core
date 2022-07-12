@@ -22,6 +22,7 @@ jobs:
   steps: 
   - checkout: MyGitHubRepo
   - script: cd $(Build.SourcesDirectory) 
+  - script: ls
  # - script:  echo "${{ variables.BuildtechBackend }}"
   #- template: .Net-CI.yaml
  # - template: .Net-CD.yaml
