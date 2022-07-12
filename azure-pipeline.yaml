@@ -9,19 +9,14 @@ resources:
     name: balaji-9702/Templates
 
    
-
-
 trigger: none
 
 variables:
 - template: values.yaml
 
-
-
-
 jobs:
 - job: Build
-  condition:  ${{ variables.Buildtech }} =='Net'
+  condition:  contains(${{ variables.Buildtech }} =='Net')
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
