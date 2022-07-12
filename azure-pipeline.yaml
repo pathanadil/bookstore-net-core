@@ -24,7 +24,7 @@ jobs:
   - template: .Net-CD.yaml
 
 - job: PythonDeploy
-  condition: eq(${{ variables.Buildtech }},'python')
+  condition: and(succeeded(), eq('${{ variables.Buildtech }}', 'python'))
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
