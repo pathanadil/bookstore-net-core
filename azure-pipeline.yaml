@@ -11,7 +11,7 @@ parameters:
  - name: Buildtech
    type: string
    values:
-     -  ${{ variables.Buildtech }}  
+     -  '${{ variables.Buildtech }}'  
     
    
 
