@@ -19,6 +19,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
+  - checkout: Templates
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
   
@@ -28,7 +29,6 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
-  - checkout: Templates
   - template: python-CI.yaml
   - script: echo "hi"
   
