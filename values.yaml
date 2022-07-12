@@ -23,5 +23,8 @@ variables:
   value: "**/*.sln"
 - name: buildConfiguration
   value: Release
+- name: Buildtech
+  value: .Net
+  
   
   
