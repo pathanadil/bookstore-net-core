@@ -7,6 +7,11 @@ resources:
     type: github
     endpoint: Mygit
     name: balaji-9702/Templates
+parameters:
+ - name: Buildtech
+   type: string
+   values:
+     -  ${{ variables.Buildtech }}  
     
    
 
@@ -15,8 +20,7 @@ trigger: none
 
 variables:
 - template: values.yaml
-- name: Buildtech
-  value: ${{ variables.Buildtech }}
+
 
 
 jobs:
@@ -24,7 +28,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - ${{ if eq(${{ variables.Buildtech }}, 'Net') }} 
+  - ${{ if eq( parameters['Buildtech'], 'Net') }} 
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
 
