@@ -16,7 +16,7 @@ variables:
 
 jobs:
 - job: Build
-  condition:  contains(${{ variables.Buildtech }} =='Net')
+  condition: eq(${{ variables.Buildtech }},'Net') 
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
