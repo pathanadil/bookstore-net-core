@@ -22,9 +22,9 @@ jobs:
   steps: 
   - checkout: MyGitHubRepo
   - script: cd $(Build.SourcesDirectory) ; ls
-  - script:  echo "${{ variables.BuildtechBackend }}"
-  - template: .Net-CI.yaml
-  - template: .Net-CD.yaml
+ # - script:  echo "${{ variables.BuildtechBackend }}"
+ # - template: .Net-CI.yaml
+ # - template: .Net-CD.yaml
   
 
 - job: PythonDeploy
