@@ -21,8 +21,9 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - checkout: self
-  - template: Angular-CI.yaml
+  - checkout: AzurePipelines
+    path: s
+  - template: s/Angular-CI.yaml
   
 
 - job: PythonDeploy
