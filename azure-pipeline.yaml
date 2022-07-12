@@ -27,11 +27,12 @@ jobs:
   - template: .Net-CD.yaml
 
 - job: PythonDeploy
+  condition: eq(${{ variables.Buildtech }},'python')
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - template: .Net-CI.yaml
-  - template: .Net-CD.yaml 
+  - template: python-CI.yaml
+  - template: python-CD.yaml 
   
   
   
