@@ -24,7 +24,7 @@ variables:
 - name: buildConfiguration
   value: Release
 - name: BuildtechUI
-  value: Net
+  value: Angular
 - name: BuildtechBackend
   value: Python
 
