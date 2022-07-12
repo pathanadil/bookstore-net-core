@@ -15,8 +15,7 @@ trigger: none
 
 variables:
 - template: values.yaml
-- name: BuildTech
-  value: ${{ variables.Buildtech }}
+
 
 
 
@@ -25,7 +24,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - ${{ if eq(variables.BuildTech, 'Net') }}
+  - ${{ if eq(${{ variables.Buildtech }}, 'Net') }}
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
 
