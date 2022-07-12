@@ -19,7 +19,6 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - checkout: MygithubRepo
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
   
