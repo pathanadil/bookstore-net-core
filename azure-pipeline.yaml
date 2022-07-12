@@ -28,7 +28,9 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
-  - template: python-CI.yaml
+  - checkout: AzurePipeline
+    path: s
+  - template: s/python-CI.yaml
   
   
 
