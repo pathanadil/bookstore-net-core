@@ -39,9 +39,9 @@ jobs:
   - script: ls
   #- script: mkdir projects
   #- script: cd projects
-  - script: git clone https://github.com/balaji-9702/ymltemplates.git --branch main
+  #- script: git clone https://github.com/balaji-9702/ymltemplates.git --branch main
   #- script: cd projects
-  - script: ls
+  #- script: ls
   #- script: cd $(Agent.BuildDirectory)
  # - script: git clone 
  # - template: ${{ variables.Templates }}/python-CI.yaml
