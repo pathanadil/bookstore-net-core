@@ -34,6 +34,7 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps:
   - checkout: MyGitHubRepo
+  - script: cd D:\a\1\s
   #- script: mkdir projects
   #- script: cd projects
   #- script: git clone https://github.com/balaji-9702/Templates.git --branch test
