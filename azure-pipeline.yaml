@@ -30,14 +30,7 @@ jobs:
   steps: 
   - script: echo "This is python project"
   
-- job: Netpython
-  condition: and(succeeded(), eq('${{ variables.Buildtech }}', 'NP'))
-  pool:
-    vmImage: ${{ variables.vmImage }}
-  steps: 
-  - template: .Net-CI.yaml
-  - template: .Net-CD.yaml
-  - script: echo "This is python project"
+
   
   
   
