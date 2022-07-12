@@ -19,7 +19,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - checkout: MygithubRep
+  - checkout: github://balaji-9702/Templates
   - script:  echo "${{ variables.BuildtechBackend }}"
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
