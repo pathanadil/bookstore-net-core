@@ -16,19 +16,19 @@ variables:
 
 jobs:
 - job: Build
-  condition: and(succeeded(), eq('${{ variables.BuildtechBackend }}', 'Net'))
+  condition: and(succeeded(), eq('${{ variables.BuildtechUI }}', 'Angular'))
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - template: .Net-CI.yaml
-  - template: .Net-CD.yaml
+  - template: Angular-CI.yaml
+  
 
 - job: PythonDeploy
-  condition: and(succeeded(), eq('${{ variables.BuildtechBackend }}', 'python'))
+  condition: and(succeeded(), eq('${{ variables.BuildtechUI }}', 'React'))
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - script: echo "This is python project"
+  - script: echo "This is React project"
   
 
   
