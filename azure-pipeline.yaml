@@ -33,8 +33,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
- 
-  #- template: $(Build.SourcesDirectory)/python-CI.yaml
+  - template: python-CI.yaml
   - script: echo "hi"
   
   
