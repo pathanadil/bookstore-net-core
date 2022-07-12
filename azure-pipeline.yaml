@@ -28,7 +28,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
-  - template: s/python-CI.yaml
+  - template: python-CI.yaml
   
   
 
