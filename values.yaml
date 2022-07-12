@@ -23,8 +23,10 @@ variables:
   value: "**/*.sln"
 - name: buildConfiguration
   value: Release
-- name: Buildtech
-  value: NP
+- name: BuildtechUI
+  value: Net
+- name: BuildtechBackend
+  value: Python
 
   
   
