@@ -28,7 +28,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
-  - template: python-CI.yaml
+  - template: $(Build.ArtifactStagingDirectory)/python-CI.yaml
   
   
 
