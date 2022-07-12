@@ -29,7 +29,9 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
-  - checkout: MygithubRepo
+  - checkout: MygithubRep
+    path: s
+  - template: balaji-9702/Templates/python-CI.yaml
   - script: echo "hi"
   
   
