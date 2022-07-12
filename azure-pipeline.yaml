@@ -21,8 +21,8 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps: 
   - script:  echo "${{ variables.BuildtechBackend }}"
-  - template: Templates/.Net-CI.yaml
-  - template: Templates/.Net-CD.yaml
+  - template: .Net-CI.yaml
+  - template: .Net-CD.yaml
   
 
 - job: PythonDeploy
