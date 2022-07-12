@@ -29,7 +29,7 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps:
   - checkout: Templates
-  - template: python-CI.yaml
+  - script: echo "hi"
   
   
 
