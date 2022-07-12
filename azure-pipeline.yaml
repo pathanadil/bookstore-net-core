@@ -3,7 +3,7 @@
 
 resources:
   repositories:
-  - repository: Templates
+  - repository: MygithubRepo
     type: github
     endpoint: Mygit
     name: balaji-9702/Templates
@@ -28,6 +28,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
+  - checkout: MygithubRepo
   - template: python-CI.yaml
   - script: echo "hi"
   
