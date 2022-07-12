@@ -29,7 +29,7 @@ jobs:
   
 
 - job: PythonDeploy
-  condition: and(succeeded(), eq('${{ variables.BuildtechBackend }}', 'python'))
+  condition: eq('${{ variables.BuildtechBackend }}', 'python')
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
