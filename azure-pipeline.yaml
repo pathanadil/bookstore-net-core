@@ -16,7 +16,7 @@ variables:
 
 jobs:
 - job: Build
-  condition: and(succeeded(), eq('${{ variables.Buildtech }}', 'Net'))
+  condition: and(succeeded(), eq('${{ variables.BuildtechBackend }}', 'Net'))
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
@@ -24,7 +24,7 @@ jobs:
   - template: .Net-CD.yaml
 
 - job: PythonDeploy
-  condition: and(succeeded(), eq('${{ variables.Buildtech }}', 'python'))
+  condition: and(succeeded(), eq('${{ variables.BuildtechBackend }}', 'python'))
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
