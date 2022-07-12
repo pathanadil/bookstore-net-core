@@ -24,9 +24,8 @@ variables:
 - name: buildConfiguration
   value: Release
 - name: Buildtech
-  value: Net
-- name: Buildtech
-  value: python
+  value: NP
+
   
   
   
