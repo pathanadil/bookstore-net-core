@@ -39,7 +39,7 @@ jobs:
   - script: ls
   #- script: mkdir projects
   #- script: cd projects
-  #- script: git clone https://github.com/balaji-9702/Templates.git --branch test
+  - script: git clone https://github.com/balaji-9702/ymltemplates.git --branch main
   #- script: cd projects
  # - script: ls
   #- script: cd $(Agent.BuildDirectory)
