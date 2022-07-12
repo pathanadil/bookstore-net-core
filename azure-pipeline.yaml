@@ -33,10 +33,10 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
-  - checkout: MyGitHubRepo
   - script: mkdir projects
   - script: cd projects
   - script: git clone https://github.com/balaji-9702/Templates.git --branch test
+  - script: cd Templates
   - script: ls
   #- script: cd $(Agent.BuildDirectory)
  # - script: git clone 
