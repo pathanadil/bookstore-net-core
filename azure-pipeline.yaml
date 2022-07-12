@@ -21,10 +21,10 @@ variables:
 
 jobs:
 - job: Build
+  condition: eq(${{ variables.Buildtech }},'Net')
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - ${{ if eq(${{ variables.Buildtech }}, 'Net') }}
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
 
