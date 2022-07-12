@@ -6,7 +6,7 @@ resources:
   - repository: MygitHubRepo
     type: github
     endpoint: Newgit
-    name: balaji-9702/ymtemplates
+    name: balaji-9702/ymltemplates
 
 
    
