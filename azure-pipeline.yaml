@@ -40,7 +40,7 @@ jobs:
   - script: ls
   #- script: cd $(Agent.BuildDirectory)
  # - script: git clone 
- # - template: python-CI.yaml
+  - template: Templates/python-CI.yaml
   - script: echo "hi"
   
   
