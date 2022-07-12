@@ -34,7 +34,7 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps:
   - checkout: MyGitHubRepo
-  - script: cd (Agent.BuildDirectory)
+  - script: cd $(Agent.BuildDirectory)
   - script: ls
  # - template: python-CI.yaml
   - script: echo "hi"
