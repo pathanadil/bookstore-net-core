@@ -28,7 +28,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - ${{ if eq( parameters['Buildtech'], 'Net') }} 
+  - ${{ if eq(${{ variables.Buildtech }} , 'Net') }} 
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
 
