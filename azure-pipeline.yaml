@@ -20,6 +20,7 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps: 
   - checkout: MygithubRep
+  - script: dir $(Build.SourcesDirectory)
   - script:  echo "${{ variables.BuildtechBackend }}"
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
