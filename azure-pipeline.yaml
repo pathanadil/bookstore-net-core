@@ -32,7 +32,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
-  - checkout: MygithubRep
+ 
   #- template: $(Build.SourcesDirectory)/python-CI.yaml
   #- script: echo "hi"
   
