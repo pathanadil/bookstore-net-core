@@ -30,7 +30,6 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps:
   - checkout: MygithubRepo
-  - template: python-CI.yaml
   - script: echo "hi"
   
   
