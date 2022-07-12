@@ -21,8 +21,8 @@ jobs:
   steps: 
   - checkout: MygithubRep
   - script:  echo "${{ variables.BuildtechBackend }}"
-  - template: $(Pipeline.Workspace)/s/.Net-CI.yaml
-  - template: $(Pipeline.Workspace)/s/.Net-CD.yaml
+  - template: .Net-CI.yaml
+  - template: .Net-CD.yaml
   
 
 - job: PythonDeploy
