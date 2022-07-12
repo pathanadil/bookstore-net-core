@@ -6,7 +6,8 @@ resources:
   - repository: MyGitHubRepo
     type: github
     endpoint: Mygit
-    name: balaji-9702/Templates
+    name: balaji-9702/ymltemplates
+
     
   
 trigger: none
