@@ -21,14 +21,11 @@ variables:
   value: drop  
 - name: solution
   value: "**/*.sln"
-- name: buildConfiguration
-  value: Release
 - name: BuildtechUI
   value: Angular
 - name: BuildtechBackend
-  value: python
-- name: Templates
-  value: projects
+  value: Net
+
 
   
   
