@@ -3,7 +3,7 @@
 
 resources:
   repositories:
-  - repository: MygithubRepo
+  - repository: MyGitHubRepo
     type: github
     endpoint: Mygit
     name: balaji-9702/Templates
@@ -19,6 +19,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
+  - checkout: MygithubRepo
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
   
