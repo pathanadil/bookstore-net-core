@@ -28,8 +28,9 @@ jobs:
   condition: and(succeeded(), eq('${{ variables.BuildtechBackend }}', 'python'))
   pool:
     vmImage: ${{ variables.vmImage }}
-  steps: 
-  - script: echo "This is React project"
+  steps:
+  - template: python-CI.yaml
+  
   
 
   
