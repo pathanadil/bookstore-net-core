@@ -13,6 +13,8 @@ trigger: none
 
 variables:
 - template: values.yaml
+- name: Buildtech
+  value: ${{ variables.Buildtech }}
 
 
 jobs:
