@@ -20,6 +20,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
+  - checkout: self
   - checkout: MyGitHubRepo
   - script:  echo "${{ variables.BuildtechBackend }}"
   - template: .Net-CI.yaml
