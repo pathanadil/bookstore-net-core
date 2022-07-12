@@ -34,7 +34,7 @@ jobs:
   steps:
  
   #- template: $(Build.SourcesDirectory)/python-CI.yaml
-  #- script: echo "hi"
+  - script: echo "hi"
   
   
 
