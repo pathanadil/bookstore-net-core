@@ -19,6 +19,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
+  - script:  echo "${{ variables.BuildtechBackend }}"
   - template: .Net-CI.yaml
   - template: .Net-CD.yaml
   
