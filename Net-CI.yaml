@@ -1,3 +1,30 @@
 steps:
-  - script: echo "This is python project"
-  - template: https://github.com/balaji-9702/ymltemplates/blob/main/Net-CI.yaml
+    - checkout: self
+    - task: NuGetToolInstaller@1
+      displayName: Use NuGet
+      inputs:
+        checkLatest: true
+    - task: DotNetCoreCLI@2
+      displayName: Restore
+      inputs:
+        command: restore
+        projects: ${{variables.solution}}
+    - task: DotNetCoreCLI@2
+      displayName: Build
+      inputs:
+        arguments: --configuration ${{variables.buildConfiguration}}
+        projects: ${{variables.solution}}
+    
+    - task: DotNetCoreCLI@2
+      displayName: Publish
+      inputs:
+       command: publish
+       publishWebProjects: True
+       arguments: --configuration ${{variables.buildConfiguration}} --output $(build.artifactstagingdirectory)
+       zipAfterPublish: True
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifact'
+      inputs:
+       PathtoPublish: '$(build.artifactstagingdirectory)'
+       ArtifactName: 'drop' 
+       
