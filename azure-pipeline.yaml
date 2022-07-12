@@ -33,6 +33,9 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps:
+  - checkout: MyGitHubRepo
+  - script: cd $(Build.SourcesDirectory) 
+  - script: ls
   - template: python-CI.yaml
   - script: echo "hi"
   
