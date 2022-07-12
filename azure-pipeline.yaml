@@ -32,7 +32,7 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps: 
   - template: python-CI.yaml
-  - template: python-CD.yaml 
+  
   
   
   
