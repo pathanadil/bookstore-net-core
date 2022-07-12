@@ -15,7 +15,7 @@ variables:
 
 jobs:
 - job: Build
-  condition: and(succeeded(), eq('${{ variables.BuildtechBackend }}', 'Net'))
+  condition:  eq('${{ variables.BuildtechBackend }}', 'Net')
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
