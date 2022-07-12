@@ -29,7 +29,6 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-
   - script: echo "This is React project"
   
 
