@@ -1,4 +1,9 @@
-   
+ parameters:
+  - name: environment
+    type: string
+    default: ${{ variables.Buildtech }}
+
+
 resources:
   repositories:
   - repository: MygitHubRepo
