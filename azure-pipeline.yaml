@@ -7,6 +7,7 @@ resources:
     type: github
     endpoint: Mygit
     name: balaji-9702/Templates
+    ref : main
   
 trigger: none
 
@@ -19,7 +20,6 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
- 
   - script:  echo "${{ variables.BuildtechBackend }}"
   - template: Templates/.Net-CI.yaml
   - template: Templates/.Net-CD.yaml
