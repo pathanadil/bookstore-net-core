@@ -37,14 +37,7 @@ jobs:
   - checkout: MyGitHubRepo
   - script: cd D:\a\1\s
   - script: ls
-  #- script: mkdir projects
-  #- script: cd projects
-  #- script: git clone https://github.com/balaji-9702/ymltemplates.git --branch main
-  #- script: cd projects
-  #- script: ls
-  #- script: cd $(Agent.BuildDirectory)
- # - script: git clone 
- # - template: ${{ variables.Templates }}/python-CI.yaml
+  - template: python-CI.yaml
   - script: echo "hi"
   
   
