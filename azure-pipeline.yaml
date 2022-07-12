@@ -30,8 +30,7 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps:
   - checkout: MygithubRep
-    path: s
-  - template: s/python-CI.yaml
+  - template: $(Build.SourcesDirectory)/python-CI.yaml
   - script: echo "hi"
   
   
