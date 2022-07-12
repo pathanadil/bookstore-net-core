@@ -27,6 +27,8 @@ variables:
   value: Angular
 - name: BuildtechBackend
   value: python
+- name: Templates
+  value: Templates
 
   
   
