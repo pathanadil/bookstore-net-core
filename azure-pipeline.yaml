@@ -22,9 +22,9 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - ${{ if eq('${{ variables.unittest }}', 'true') }}
+  ${{ if eq('${{ variables.Build }}', 'true') }}
   - template: Restore.yaml@MyGitHubRepo
-  - ${{ if eq('${{ variables.Build }}', 'true') }}
+  ${{ if eq('${{ variables.Build }}', 'true') }}
   - template: Build.yaml@MyGitHubRepo
   
 
