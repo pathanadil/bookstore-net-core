@@ -25,7 +25,7 @@ jobs:
   - ${{ if eq('${{ variables.Build }}', 'true') }}:
   - template: Restore.yaml@MyGitHubRepo
   - ${{ if eq('${{ variables.Build }}', 'true') }}:
-   - template: Build.yaml@MyGitHubRepo
+  - template: Build.yaml@MyGitHubRepo
   
 
 - job: PythonDeploy
