@@ -21,7 +21,7 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps: 
   - template: Net-CI.yaml@MyGitHubRepo
-  - template: Build.yaml@MyGitHubRepo
+  #- template: Build.yaml@MyGitHubRepo
   
 
 - job: PythonDeploy
