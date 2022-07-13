@@ -28,7 +28,7 @@ variables:
 - name: Build
   value: false
 - name: unittest
-  value: false
+  value: true
 
 
 
