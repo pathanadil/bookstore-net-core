@@ -22,6 +22,7 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps: 
   - template: Restore-CI.yaml@MyGitHubRepo
+  - script: "Ran the script"
   #- template: Build.yaml@MyGitHubRepo
   
 
