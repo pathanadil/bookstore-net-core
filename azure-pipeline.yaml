@@ -22,6 +22,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
+  - checkout: self
   - template: Restore.yaml@MyGitHubRepo
   - template: Build.yaml@MyGitHubRepo
   
