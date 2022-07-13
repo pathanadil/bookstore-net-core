@@ -23,7 +23,7 @@ jobs:
     vmImage: ${{ variables.vmImage }}
   steps: 
   - ${{ if eq('${{ variables.Build }}', 'true') }}:
-   - template: Restore.yaml@MyGitHubRepo
+  - template: Restore.yaml@MyGitHubRepo
   - ${{ if eq('${{ variables.Build }}', 'true') }}:
    - template: Build.yaml@MyGitHubRepo
   
