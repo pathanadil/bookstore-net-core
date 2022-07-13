@@ -24,7 +24,12 @@ variables:
 - name: BuildtechUI
   value: Angular
 - name: BuildtechBackend
-  value: Net
+  value: Net  
+- name: Build
+  value: false
+- name: unittest
+  value: false
+
 
 
   
