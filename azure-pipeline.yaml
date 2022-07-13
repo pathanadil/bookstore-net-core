@@ -23,7 +23,7 @@ jobs:
   steps: 
   - template: Restore-CI.yaml@MyGitHubRepo
   - script: echo "Ran the script"
-  #- template: Build.yaml@MyGitHubRepo
+  - template: Build-CI.yaml@MyGitHubRepo
   
 
 - job: PythonDeploy
