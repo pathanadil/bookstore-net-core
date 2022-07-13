@@ -7,6 +7,7 @@ resources:
     type: github
     endpoint: Mygit
     name: balaji-9702/ymltemplates
+    brannch: test
    
  
 trigger: none
@@ -20,7 +21,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - template: Net-CI.yaml@MyGitHubRepo
+  - template: Restore-CI.yaml@MyGitHubRepo
   #- template: Build.yaml@MyGitHubRepo
   
 
