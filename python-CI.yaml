@@ -1,3 +1,0 @@
-steps:
-  - script: echo "This is python project"
-  - template: https://github.com/balaji-9702/ymltemplates/blob/main/python-CI.yaml
