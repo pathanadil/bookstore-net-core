@@ -19,7 +19,7 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - template: Net.yaml@MyGitHubRepo
+  - template: Net-CI.yaml@MyGitHubRepo
   - template: Build.yaml@MyGitHubRepo
   
 
