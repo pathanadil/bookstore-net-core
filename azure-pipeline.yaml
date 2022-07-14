@@ -6,7 +6,7 @@ resources:
   - repository: MyGitHubRepo
     type: github
     endpoint: Mygit
-    name: balaji-9702/ymltemplates
+    name: pathanadil/AzurePipelineTemplates
 
     
   
@@ -21,8 +21,8 @@ jobs:
   pool:
     vmImage: ${{ variables.vmImage }}
   steps: 
-  - template: Net-CI.yaml@MyGitHubRepo
-  - template: Net-CD.yaml@MyGitHubRepo
+  - template: netCi.yaml@MyGitHubRepo
+  - template: netCd.yaml@MyGitHubRepo
   
 
 - job: PythonDeploy
