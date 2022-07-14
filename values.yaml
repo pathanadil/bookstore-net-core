@@ -8,7 +8,7 @@ variables:
 - name: apptype
   value: webApp
 - name: azureSubscription
-  value: 334264f8-16d6-4fdf-95a9-755a26b82e90
+  value: Free Trial (af4cbcbb-5c35-4080-ad48-ae103f6cc9c8)
 - name: artifact
   value: drop  
 - name: solution
