@@ -1,18 +1,10 @@
 
 
 variables:
-- name: repository
-  value: MygitHubRepo
-- name: type
-  value: github
-- name: endpoint
-  value: Mygit
-- name: name
-  value: balaji-9702/Templates
 - name: vmImage
   value: windows-latest
 - name: webapp
-  value: insight-webapp
+  value: BookstoreProjectWebApp
 - name: apptype
   value: webApp
 - name: azureSubscription
