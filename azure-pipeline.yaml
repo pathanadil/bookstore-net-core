@@ -5,7 +5,7 @@ resources:
   repositories:
   - repository: MyGitHubRepo
     type: github
-    endpoint: Mygit
+    endpoint: pathanadil
     name: pathanadil/AzurePipelineTemplates
 
     
